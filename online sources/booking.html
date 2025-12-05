@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Course - Online Source</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <div class="logo-3d">
+                    <div class="logo-face logo-front">OS</div>
+                    <div class="logo-face logo-back">OS</div>
+                    <div class="logo-face logo-right">OS</div>
+                    <div class="logo-face logo-left">OS</div>
+                    <div class="logo-face logo-top">OS</div>
+                    <div class="logo-face logo-bottom">OS</div>
+                </div>
+                <span class="logo-text">Online Source</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="booking.html" class="active">Book Course</a></li>
+                <li><a href="booking-history.html">My Bookings</a></li>
+                <li><a href="staff.html">Our Staff</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Book Your Course</h1>
+            <p>Fill in your details to enroll in a course</p>
+        </section>
+
+        <section class="booking-form-section">
+            <div class="booking-form-container">
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-group">
+                        <label for="course">Select Course *</label>
+                        <select id="course" name="course" required>
+                            <option value="">Choose a course...</option>
+                            <option value="python">Python Programming - Rs 350/month</option>
+                            <option value="java">Java Programming - Rs 350/month</option>
+                            <option value="python-dsa">Python DSA - Rs 350/month</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="startDate">Preferred Start Date *</label>
+                        <input type="date" id="startDate" name="startDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="paymentMethod">Payment Method *</label>
+                        <select id="paymentMethod" name="paymentMethod" required>
+                            <option value="">Select payment method...</option>
+                            <option value="credit-card">Credit Card</option>
+                            <option value="debit-card">Debit Card</option>
+                            <option value="upi">UPI</option>
+                            <option value="net-banking">Net Banking</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="terms" name="terms" required>
+                            I agree to the terms and conditions *
+                        </label>
+                    </div>
+
+                    <div class="form-summary">
+                        <h3>Booking Summary</h3>
+                        <div class="summary-item">
+                            <span>Course:</span>
+                            <span id="summaryCourse">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Price:</span>
+                            <span id="summaryPrice">Rs 350/month</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Confirm Booking</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Online Source. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

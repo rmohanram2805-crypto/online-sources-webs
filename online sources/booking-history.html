@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking History - Online Source</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <div class="logo-3d">
+                    <div class="logo-face logo-front">OS</div>
+                    <div class="logo-face logo-back">OS</div>
+                    <div class="logo-face logo-right">OS</div>
+                    <div class="logo-face logo-left">OS</div>
+                    <div class="logo-face logo-top">OS</div>
+                    <div class="logo-face logo-bottom">OS</div>
+                </div>
+                <span class="logo-text">Online Source</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="booking.html">Book Course</a></li>
+                <li><a href="booking-history.html" class="active">My Bookings</a></li>
+                <li><a href="staff.html">Our Staff</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>My Booking History</h1>
+            <p>View all your course bookings</p>
+        </section>
+
+        <section class="booking-history-section">
+            <div id="bookingHistory" class="booking-history-container">
+                <!-- Bookings will be dynamically loaded here -->
+            </div>
+            <div id="noBookings" class="no-bookings" style="display: none;">
+                <div class="empty-state">
+                    <div class="empty-icon">📋</div>
+                    <h2>No Bookings Yet</h2>
+                    <p>You haven't booked any courses yet. Start your learning journey today!</p>
+                    <a href="booking.html" class="btn btn-primary">Book a Course</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Online Source. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
